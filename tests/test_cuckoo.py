@@ -3,13 +3,13 @@
 # This software may be modified and distributed under the terms
 # of the MIT license. See the LICENSE file for details.
 
-import re
 import json
-import unittest
 import platform
+import re
 import subprocess
-from time import sleep
+import unittest
 from os import path, symlink, listdir
+from time import sleep
 
 TESTS_DIR = path.dirname(path.abspath(__file__))
 ANALYZER_ROOT = path.dirname(TESTS_DIR)

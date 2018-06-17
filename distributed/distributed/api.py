@@ -4,9 +4,11 @@
 
 import os.path
 import shutil
+
 import requests
 
 from distributed.exception import InvalidReport
+
 
 def list_machines(url):
     r = requests.get(os.path.join(url, "machines", "list"))

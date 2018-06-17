@@ -3,10 +3,9 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
+import logging
 import os
 import shutil
-import logging
-
 from zipfile import ZipFile, BadZipfile
 
 from lib.common.abstracts import Package

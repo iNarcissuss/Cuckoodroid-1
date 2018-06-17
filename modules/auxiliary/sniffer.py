@@ -3,9 +3,9 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import os
 import getpass
 import logging
+import os
 import subprocess
 
 from lib.cuckoo.common.abstracts import Auxiliary

@@ -11,8 +11,9 @@ down_revision = "69ecf07a99b"
 branch_labels = None
 depends_on = None
 
-from alembic import op
 import sqlalchemy as sa
+from alembic import op
+
 
 def upgrade():
     op.add_column("task", sa.Column("submitted", sa.DateTime(), nullable=True))

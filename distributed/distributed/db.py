@@ -3,8 +3,8 @@
 # See the file 'docs/LICENSE' for copying permission.
 
 import json
-
 from datetime import datetime
+
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy.inspection import inspect
 

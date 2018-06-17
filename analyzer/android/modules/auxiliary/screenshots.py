@@ -3,14 +3,15 @@
 # See the file 'docs/LICENSE' for copying permission.
 # Originally contributed by Check Point Software Technologies, Ltd.
 
-import time
-import logging
 import StringIO
+import logging
+import time
 from threading import Thread
-from lib.common.abstracts import Auxiliary
-from lib.common.results import NetlogFile
+
 from lib.api.adb import take_screenshot
 from lib.api.screenshot import Screenshot
+from lib.common.abstracts import Auxiliary
+from lib.common.results import NetlogFile
 
 log = logging.getLogger(__name__)
 SHOT_DELAY = 2

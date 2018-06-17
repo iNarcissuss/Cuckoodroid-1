@@ -7,6 +7,7 @@ import shlex
 
 from lib.common.abstracts import Package
 
+
 class Python(Package):
     """Python analysis package."""
 

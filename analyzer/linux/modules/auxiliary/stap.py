@@ -2,11 +2,11 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
+import logging
 import os
+import platform
 import subprocess
 import time
-import logging
-import platform
 
 from lib.common.abstracts import Auxiliary
 from lib.common.results import NetlogFile

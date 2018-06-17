@@ -4,8 +4,9 @@
 # See the file 'docs/LICENSE' for copying permission.
 
 import os
-import pymongo
 import sys
+
+import pymongo
 
 # Cuckoo path.
 CUCKOO_PATH = os.path.join(os.getcwd(), "..")

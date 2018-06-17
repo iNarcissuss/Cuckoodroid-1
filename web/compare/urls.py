@@ -3,8 +3,9 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file "docs/LICENSE" for copying permission.
 
-from . import views
 from django.conf.urls import url
+
+from . import views
 
 urlpatterns = [
     url(r"^(?P<left_id>\d+)/$", views.left),

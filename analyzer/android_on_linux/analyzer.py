@@ -2,19 +2,21 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import os
 import logging
+import os
 import pkgutil
 import subprocess
-import xmlrpclib
 import time
-from lib.core.packages import choose_package
-from lib.common.exceptions import CuckooError, CuckooPackageError
-from lib.common.abstracts import Package,Auxiliary
+import xmlrpclib
+
+from lib.common.abstracts import Package, Auxiliary
 from lib.common.constants import PATHS
+from lib.common.exceptions import CuckooError, CuckooPackageError
 from lib.core.config import Config
+from lib.core.packages import choose_package
 from lib.core.startup import init_logging
 from modules import auxiliary
+
 logging.disable(level=logging.DEBUG)
 log = logging.getLogger()
 

@@ -5,10 +5,10 @@
 
 import os
 import tempfile
+
 from nose.tools import assert_equals, raises
 
 import lib.cuckoo.common.abstracts as abstracts
-from lib.cuckoo.common.config import Config
 
 
 class TestProcessing:

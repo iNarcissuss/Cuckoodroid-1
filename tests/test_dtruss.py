@@ -3,11 +3,10 @@
 # This software may be modified and distributed under the terms
 # of the MIT license. See the LICENSE file for details.
 
-import unittest
 from sets import Set
 
-from common import DtraceTestCase
 from analyzer.darwin.lib.dtrace.dtruss import *
+from common import DtraceTestCase
 
 
 class TestDtruss(DtraceTestCase):

@@ -4,6 +4,7 @@
 # See the file 'docs/LICENSE' for copying permission.
 
 import tempfile
+
 from nose.tools import assert_equals, raises
 
 from lib.cuckoo.common.config import Config

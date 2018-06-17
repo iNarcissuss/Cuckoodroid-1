@@ -7,6 +7,7 @@ import tempfile
 
 from lib.common.abstracts import Package
 
+
 class Applet(Package):
     """Java Applet analysis package."""
     PATHS = [

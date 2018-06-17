@@ -9,9 +9,8 @@ import os
 
 from lib.cuckoo.common.abstracts import Processing, BehaviorHandler
 from lib.cuckoo.common.config import Config
-
-from .platform.windows import WindowsMonitor
 from .platform.linux import LinuxSystemTap
+from .platform.windows import WindowsMonitor
 
 log = logging.getLogger(__name__)
 

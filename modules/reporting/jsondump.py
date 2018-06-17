@@ -3,14 +3,15 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import os
-import json
-import codecs
 import calendar
+import codecs
 import datetime
+import json
+import os
 
 from lib.cuckoo.common.abstracts import Report
 from lib.cuckoo.common.exceptions import CuckooReportError
+
 
 def default(obj):
     if isinstance(obj, datetime.datetime):

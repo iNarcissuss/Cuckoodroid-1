@@ -3,18 +3,17 @@
 # This software may be modified and distributed under the terms
 # of the MIT license. See the LICENSE file for details.
 
-import filecmp
 import unittest
-from os import remove, path
-from common import TESTS_DIR
 from difflib import unified_diff
+from os import remove, path
 from subprocess import check_call
 
-from analyzer.darwin.lib.dtrace.autoprobes import generate_probes
 from analyzer.darwin.lib.dtrace.autoprobes import dereference_type
+from analyzer.darwin.lib.dtrace.autoprobes import generate_probes
 from analyzer.darwin.lib.dtrace.autoprobes import serialize_atomic_type
 from analyzer.darwin.lib.dtrace.autoprobes import serialize_struct_type
 from analyzer.darwin.lib.dtrace.autoprobes import serialize_type_with_template
+from common import TESTS_DIR
 
 SIGNATURES_FILE = path.join(TESTS_DIR, "..", "analyzer", "darwin", "lib",
                             "core", "data", "signatures.yml")

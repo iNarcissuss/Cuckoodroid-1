@@ -3,19 +3,19 @@
 # See the file 'docs/LICENSE' for copying permission.
 # Originally contributed by Check Point Software Technologies, Ltd.
 
-import os
 import logging
+import os
 import pkgutil
 import shutil
 import sys
-import xmlrpclib
 import time
+import xmlrpclib
 
-from lib.core.packages import choose_package
-from lib.common.exceptions import CuckooError, CuckooPackageError, CuckooUICrashError
 from lib.common.abstracts import Package, Auxiliary
 from lib.common.constants import PATHS
+from lib.common.exceptions import CuckooError, CuckooPackageError, CuckooUICrashError
 from lib.core.config import Config
+from lib.core.packages import choose_package
 from lib.core.startup import init_logging
 from modules import auxiliary
 

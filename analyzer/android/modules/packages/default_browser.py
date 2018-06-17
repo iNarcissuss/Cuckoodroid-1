@@ -3,8 +3,9 @@
 # See the file 'docs/LICENSE' for copying permission.
 # Originally contributed by Check Point Software Technologies, Ltd.
 
-from lib.common.abstracts import Package
 from lib.api.adb import execute_browser
+from lib.common.abstracts import Package
+
 
 class default_browser(Package):
     """Default Browser analysis package."""

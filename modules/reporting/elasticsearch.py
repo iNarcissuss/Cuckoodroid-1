@@ -5,16 +5,18 @@
 from __future__ import absolute_import
 
 import datetime
-import elasticsearch.helpers
 import json
 import logging
-import time
 import os
+import time
+
+import elasticsearch.helpers
 
 from lib.cuckoo.common.abstracts import Report
 from lib.cuckoo.common.constants import CUCKOO_ROOT
 from lib.cuckoo.common.elastic import elastic
 from lib.cuckoo.common.exceptions import CuckooReportError, CuckooOperationalError
+
 #from lib.cuckoo.misc import cwd
 
 logging.getLogger("elasticsearch").setLevel(logging.WARNING)

@@ -1,9 +1,10 @@
 from __future__ import with_statement
-from alembic import context
-from sqlalchemy import create_engine, pool
 
 import os.path
 import sys
+
+from alembic import context
+from sqlalchemy import create_engine, pool
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 

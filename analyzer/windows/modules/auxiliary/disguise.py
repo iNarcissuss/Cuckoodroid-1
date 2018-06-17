@@ -8,7 +8,6 @@ import logging
 import random
 
 from _winreg import HKEY_LOCAL_MACHINE, REG_SZ, REG_MULTI_SZ, REG_BINARY
-
 from lib.common.abstracts import Auxiliary
 from lib.common.rand import random_integer, random_string
 from lib.common.registry import rename_regkey, regkey_exists

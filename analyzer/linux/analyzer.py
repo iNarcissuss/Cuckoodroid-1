@@ -2,15 +2,15 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import os
-import sys
-import pkgutil
-import logging
-import tempfile
-import xmlrpclib
-import traceback
-import time
 import datetime
+import logging
+import os
+import pkgutil
+import sys
+import tempfile
+import time
+import traceback
+import xmlrpclib
 
 from lib.api.process import Process
 from lib.common.abstracts import Package, Auxiliary

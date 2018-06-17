@@ -4,19 +4,20 @@
 # of the MIT license. See the LICENSE file for details.
 
 import logging
-from sys import stderr
 from hashlib import sha256
-from xmlrpclib import Server
-from traceback import format_exc
 from os import path, getcwd, makedirs
+from sys import stderr
+from traceback import format_exc
+from xmlrpclib import Server
 
 from lib.common.config import Config
 from lib.common.hashing import hash_file
 from lib.common.results import NetlogHandler, upload_to_host
 from lib.core.constants import PATHS
-from lib.core.packages import choose_package_class
-from lib.core.osx import set_wallclock
 from lib.core.host import CuckooHost
+from lib.core.osx import set_wallclock
+from lib.core.packages import choose_package_class
+
 
 class Macalyzer(object):
     """Cuckoo OS X analyser.

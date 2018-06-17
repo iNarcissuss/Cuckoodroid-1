@@ -6,10 +6,10 @@
 
 import logging
 import os
+import shlex
+import shutil
 import subprocess
 import time
-import shutil
-import shlex
 
 from lib.cuckoo.common.abstracts import Machinery
 from lib.cuckoo.common.exceptions import CuckooCriticalError

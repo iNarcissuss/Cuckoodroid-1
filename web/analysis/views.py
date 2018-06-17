@@ -3,24 +3,22 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import sys
-import re
-import os
 import json
+import os
+import re
+import sys
 import urllib
 import zipfile
-
 from cStringIO import StringIO
-
-from django.conf import settings
-from django.http import HttpResponse
-from django.shortcuts import render, redirect
-from django.views.decorators.http import require_safe
-from django.views.decorators.csrf import csrf_exempt
 
 import pymongo
 from bson.objectid import ObjectId
+from django.conf import settings
 from django.core.exceptions import PermissionDenied, ObjectDoesNotExist
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_safe
 from gridfs import GridFS
 
 sys.path.append(settings.CUCKOO_PATH)

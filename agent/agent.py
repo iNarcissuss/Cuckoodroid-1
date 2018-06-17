@@ -3,18 +3,18 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
+import ConfigParser
 import os
-import sys
-import time
+import platform
+import random
 import socket
 import string
-import random
-import platform
 import subprocess
-import ConfigParser
+import sys
+import time
+from SimpleXMLRPCServer import SimpleXMLRPCServer
 from StringIO import StringIO
 from zipfile import ZipFile
-from SimpleXMLRPCServer import SimpleXMLRPCServer
 
 BIND_IP = "0.0.0.0"
 BIND_PORT = 8000

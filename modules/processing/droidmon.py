@@ -3,12 +3,11 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 # Originally contributed by Check Point Software Technologies, Ltd.
-from collections import defaultdict
-
+import hashlib
 import json
 import logging
 import os
-import hashlib
+from collections import defaultdict
 
 from lib.cuckoo.common.abstracts import Processing
 

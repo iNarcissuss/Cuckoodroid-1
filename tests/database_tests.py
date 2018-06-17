@@ -5,8 +5,8 @@
 
 import tempfile
 
-from sqlalchemy.exc import OperationalError
 from nose.tools import assert_equal, raises
+from sqlalchemy.exc import OperationalError
 
 from lib.cuckoo.core.database import Database, Sample, Task
 

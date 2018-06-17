@@ -5,11 +5,11 @@
 
 import os
 import tempfile
-from nose.tools import assert_equal, raises, assert_not_equal
-from lib.cuckoo.common.objects import File
+
+from nose.tools import assert_equal, assert_not_equal
 
 import lib.cuckoo.common.utils as utils
-from lib.cuckoo.common.exceptions import CuckooOperationalError
+from lib.cuckoo.common.objects import File
 
 
 class TestCreateFolders:

@@ -6,9 +6,9 @@
 
 import glob
 import logging
-import subprocess
 import os.path
 import shutil
+import subprocess
 import time
 
 from lib.cuckoo.common.abstracts import Machinery

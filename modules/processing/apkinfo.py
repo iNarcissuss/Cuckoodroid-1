@@ -2,16 +2,17 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 import base64
-import hashlib
-import json
-import os
-import logging
 import entropy
-from zipfile import BadZipfile, ZipFile
+import hashlib
+import logging
+import os
 import zipfile
+from zipfile import BadZipfile
+
 from lib.cuckoo.api.DexDumper.DexDumper import string_dumper
 from lib.cuckoo.api.androguard_extentions import get_show_NativeMethods, get_show_CryptoCode, get_show_Permissions, \
-    get_show_ReflectionCode, get_show_DynCode, get_methods, get_extended_receivers, get_permissions, get_receivers_info
+    get_show_ReflectionCode, get_show_DynCode, get_methods, get_extended_receivers, get_permissions \
+    # , get_receivers_info
 from lib.cuckoo.api.certificate import get_certificate
 
 try:
@@ -24,7 +25,6 @@ try:
 except ImportError:
     HAVE_ANDROGUARD = False
 
-from lib.cuckoo.common.objects import File
 from lib.cuckoo.common.abstracts import Processing
 from lib.cuckoo.common.exceptions import CuckooProcessingError
 

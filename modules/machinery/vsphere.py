@@ -2,18 +2,18 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import requests
 import logging
-import time
 import random
 import re
-
+import time
 from datetime import datetime, timedelta
 
+import requests
+
 from lib.cuckoo.common.abstracts import Machinery
-from lib.cuckoo.common.exceptions import CuckooMachineError
-from lib.cuckoo.common.exceptions import CuckooDependencyError
 from lib.cuckoo.common.exceptions import CuckooCriticalError
+from lib.cuckoo.common.exceptions import CuckooDependencyError
+from lib.cuckoo.common.exceptions import CuckooMachineError
 
 try:
     from pyVim.connect import SmartConnection

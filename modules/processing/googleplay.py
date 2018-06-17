@@ -8,9 +8,9 @@ import logging
 import os
 from zipfile import BadZipfile
 
-from lib.cuckoo.common.objects import File
 from lib.cuckoo.common.abstracts import Processing
 from lib.cuckoo.common.exceptions import CuckooProcessingError
+from lib.cuckoo.common.objects import File
 
 try:
     from androguard.core.bytecodes.apk import APK

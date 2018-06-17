@@ -4,9 +4,9 @@
 # of the MIT license. See the LICENSE file for details.
 
 import os
-import unittest
 import platform
 import subprocess
+import unittest
 
 TESTS_DIR = os.path.dirname(os.path.abspath(__file__))
 

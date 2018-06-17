@@ -2,10 +2,10 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import socket
 import logging
-import xmlrpclib
+import socket
 import subprocess
+import xmlrpclib
 
 log = logging.getLogger(__name__)
 

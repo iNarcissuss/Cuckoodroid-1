@@ -4,11 +4,11 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import random
 import logging
-from threading import Thread
+import random
 from ctypes import WINFUNCTYPE, POINTER
 from ctypes import c_bool, c_int, create_unicode_buffer
+from threading import Thread
 
 from lib.common.abstracts import Auxiliary
 from lib.common.defines import KERNEL32, USER32

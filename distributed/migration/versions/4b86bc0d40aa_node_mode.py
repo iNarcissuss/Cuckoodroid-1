@@ -11,8 +11,9 @@ down_revision = "2aa59981b59d"
 branch_labels = None
 depends_on = None
 
-from alembic import op
 import sqlalchemy as sa
+from alembic import op
+
 
 def upgrade():
     op.add_column("node", sa.Column("mode", sa.Text()))

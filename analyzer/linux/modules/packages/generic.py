@@ -6,6 +6,7 @@ import os
 
 from lib.common.abstracts import Package
 
+
 class Generic(Package):
     """Generic analysis package. Uses shell based execution.
     """

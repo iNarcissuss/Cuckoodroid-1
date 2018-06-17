@@ -4,7 +4,9 @@
 # of the MIT license. See the LICENSE file for details.
 
 import unittest
+
 from analyzer.darwin.lib.core.osx import set_wallclock
+
 
 class TestAnalyzer(unittest.TestCase):
 

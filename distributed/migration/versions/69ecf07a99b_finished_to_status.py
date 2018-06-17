@@ -11,8 +11,9 @@ down_revision = "3cc1509b7fdc"
 branch_labels = None
 depends_on = None
 
-from alembic import op
 import sqlalchemy as sa
+from alembic import op
+
 
 def upgrade():
     op.add_column("task", sa.Column("status", sa.Enum("pending", "processing", "finished", "deleted", name="task_status_type"), server_default="pending", nullable=False))

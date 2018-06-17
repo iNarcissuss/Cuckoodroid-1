@@ -3,15 +3,15 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import os
 import logging
+import os
 
-from lib.cuckoo.core.database import Database, Task
 from lib.cuckoo.common.abstracts import Processing
-from lib.cuckoo.common.constants import CUCKOO_VERSION
 from lib.cuckoo.common.config import emit_options
+from lib.cuckoo.common.constants import CUCKOO_VERSION
 from lib.cuckoo.common.objects import File
 from lib.cuckoo.common.utils import json_decode
+from lib.cuckoo.core.database import Database, Task
 
 log = logging.getLogger(__name__)
 

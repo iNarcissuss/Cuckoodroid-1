@@ -3,8 +3,10 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-from lib.api.process import Process
 from lib.common.abstracts import Auxiliary
+
+from lib.api.process import Process
+
 
 class DumpTLSMasterSecrets(Auxiliary):
     """Dump TLS master secrets as used by various Windows libraries."""

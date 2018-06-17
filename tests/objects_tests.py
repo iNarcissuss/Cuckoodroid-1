@@ -5,9 +5,11 @@
 
 import os
 import tempfile
+
 from nose.tools import assert_equal, raises, assert_not_equal, assert_in
 
 from lib.cuckoo.common.objects import Dictionary, File
+
 
 class TestDictionary:
     def setUp(self):

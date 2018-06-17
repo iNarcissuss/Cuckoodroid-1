@@ -2,17 +2,10 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import json
 import logging
-import os
-import re
-import subprocess
-from lib.api.adb import dump_droidmon_logs,execute_sample,install_sample,get_package_activity_name,dump_data_folder,execute_service
-from lib.common.utils import send_file
+
+from lib.api.adb import dump_droidmon_logs, execute_sample, install_sample, get_package_activity_name, execute_service
 from lib.common.abstracts import Package
-from lib.common.exceptions import CuckooPackageError
-from lib.common.results import NetlogFile
-from time import sleep
 
 log = logging.getLogger()
 

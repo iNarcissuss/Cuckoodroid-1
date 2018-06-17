@@ -2,11 +2,12 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 import os
-from androguard.core.analysis.analysis import uVMAnalysis
+
 from androguard.core.bytecodes.apk import APK
 from androguard.core.bytecodes.dvm import DalvikVMFormat
 
 from lib.cuckoo.common.abstracts import Signature
+
 
 class PackerGeneric(Signature):
     name = "android_packer_generic"

@@ -4,9 +4,9 @@
 # Originally contributed by Check Point Software Technologies, Ltd.
 
 import logging
-from lib.api.adb import dump_droidmon_logs, execute_sample, install_sample,execute_service,find_pid,\
-    crash_check,ui_crash_check,log_app_logs,crash_check_2
 
+from lib.api.adb import dump_droidmon_logs, execute_sample, install_sample, execute_service, find_pid, \
+    crash_check, crash_check_2
 from lib.common.abstracts import Package
 from lib.common.exceptions import CuckooCrashError
 

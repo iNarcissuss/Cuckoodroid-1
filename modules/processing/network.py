@@ -4,8 +4,8 @@
 # See the file 'docs/LICENSE' for copying permission.
 
 import hashlib
-import logging
 import json
+import logging
 import os
 import re
 import socket
@@ -17,10 +17,10 @@ from lib.cuckoo.common.abstracts import Processing
 from lib.cuckoo.common.config import Config
 from lib.cuckoo.common.constants import LATEST_HTTPREPLAY, CUCKOO_ROOT
 from lib.cuckoo.common.dns import resolve
+from lib.cuckoo.common.exceptions import CuckooProcessingError
 from lib.cuckoo.common.irc import ircMessage
 from lib.cuckoo.common.objects import File
 from lib.cuckoo.common.utils import convert_to_printable, versiontuple
-from lib.cuckoo.common.exceptions import CuckooProcessingError
 
 try:
     import dpkt

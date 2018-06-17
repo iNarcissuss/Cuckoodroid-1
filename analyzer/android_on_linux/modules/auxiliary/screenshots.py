@@ -2,14 +2,15 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import time
-import logging
 import StringIO
+import logging
+import time
 from threading import Thread
+
+from lib.api import adb
+from lib.api.screenshot import Screenshot
 from lib.common.abstracts import Auxiliary
 from lib.common.results import NetlogFile
-from lib.api import adb,screenshot
-from lib.api.screenshot import Screenshot
 
 log = logging.getLogger(__name__)
 SHOT_DELAY = 2

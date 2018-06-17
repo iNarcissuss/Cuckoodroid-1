@@ -18,9 +18,10 @@ revision = "495d5a6edef3"
 down_revision = "18eee46c6f81"
 
 import os.path
-import sqlalchemy as sa
 import sys
 from datetime import datetime
+
+import sqlalchemy as sa
 
 try:
     from dateutil.parser import parse

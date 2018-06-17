@@ -4,13 +4,13 @@
 # See the file 'docs/LICENSE' for copying permission.
 
 import datetime
+import hashlib
+import logging
 import os
-import sys
+import pkgutil
 import socket
 import struct
-import pkgutil
-import logging
-import hashlib
+import sys
 import threading
 import traceback
 import urllib

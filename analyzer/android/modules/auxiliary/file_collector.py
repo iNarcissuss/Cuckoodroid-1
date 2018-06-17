@@ -3,15 +3,14 @@
 # See the file 'docs/LICENSE' for copying permission.
 import hashlib
 import json
+import logging
 import os
 import subprocess
-import logging
-from threading import Thread
-from lib.common.abstracts import Auxiliary
-from lib.common import utils
-import random
-import re
 import uuid
+from threading import Thread
+
+from lib.common import utils
+from lib.common.abstracts import Auxiliary
 
 log = logging.getLogger(__name__)
 DELAY = 1

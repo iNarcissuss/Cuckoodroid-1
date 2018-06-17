@@ -1,7 +1,7 @@
-from collections import defaultdict
 import hashlib
 import json
-import os
+from collections import defaultdict
+
 
 def flatten_apicall(call):
     new_call = {}

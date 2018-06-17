@@ -3,9 +3,8 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import dashboard.views
 import analysis.views
-
+import dashboard.views
 from django.conf.urls import include, url
 
 urlpatterns = [

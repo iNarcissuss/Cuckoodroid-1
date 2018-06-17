@@ -7,6 +7,7 @@ import unittest
 
 from analyzer.darwin.lib.core.packages import *
 
+
 class PackagesTestCase(unittest.TestCase):
 
     def test_bash_package(self):

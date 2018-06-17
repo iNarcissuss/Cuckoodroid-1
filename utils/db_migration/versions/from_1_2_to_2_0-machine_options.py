@@ -15,8 +15,9 @@ Create Date: 2015-12-16 11:07:59.948819
 revision = "cd31654d187"
 down_revision = "1583656cb935"
 
-from alembic import op
 import sqlalchemy as sa
+from alembic import op
+
 
 def upgrade():
     op.add_column("machines", sa.Column("options", sa.String(length=255), nullable=True))

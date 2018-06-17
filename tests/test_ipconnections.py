@@ -6,8 +6,9 @@
 import unittest
 from sets import Set
 
-from common import DtraceTestCase
 from analyzer.darwin.lib.dtrace.ipconnections import *
+from common import DtraceTestCase
+
 
 class TestIpconnections(DtraceTestCase):
 
